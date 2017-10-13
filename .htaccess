@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteBase /
+
+# redirect html pages to the root domain
+RewriteRule ^index\.html$ / [NC,R,L]
+
+# remove trailing html on routes
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html
