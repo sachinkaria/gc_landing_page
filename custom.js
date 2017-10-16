@@ -1,5 +1,6 @@
 $("#contactForm").on("submit", function (event) {
   if (event.isDefaultPrevented()) {
+    console.log('submitting');
     // handle the invalid form...
     formError();
     submitMSG(false, "Did you fill in the form properly?");
@@ -13,6 +14,7 @@ $("#contactForm").on("submit", function (event) {
 
 function submitForm(){
   // Initiate Variables With Form Content
+  console.log('about to make post request');
   var email = $("#email").val();
 
   $.ajax({
@@ -25,7 +27,7 @@ function submitForm(){
         formSuccess();
       } else {
         formError();
-        submitMSG(false,text);
+        submitMSG(false, text);
       }
     }
   });
@@ -63,6 +65,7 @@ function submitChefForm(){
     url: "chefMailer.php",
     data: "email=" + email,
     success : function(text){
+      console.log(text);
       if (text == "success"){
         console.log(text);
         chefFormSuccess();

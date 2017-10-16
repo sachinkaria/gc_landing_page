@@ -1,6 +1,16 @@
 <html>
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108194117-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-108194117-1');
+  </script>
+
   <title> Get Cooked</title>
   <link rel="icon" href="images/getcookprofile.png" type="image/png">
 
@@ -8,9 +18,9 @@
   <meta property="description" content="Are you a caterer? Plan, organise, and share your food at events around London.">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Get Cooked">
+  <meta property="og:title" content="Cater events around you.">
   <meta property="og:description" content="Are you a caterer? Plan, organise, and share your food at events around London.">
-  <meta property="og:image" alt= "get cooked helps you find and book caterers" content="http://getcooked.co/images/facebook-image.jpg">
+  <meta property="og:image" alt="get cooked helps you find and book caterers" content="http://getcooked.co/images/facebook-image.jpg">
   <meta property="og:url" content="http://getcooked.co/caterers">
 
   <!-- start Mixpanel --><script type="text/javascript">(function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
@@ -36,7 +46,7 @@ mixpanel.init("65f6d76c5922979972106f6f44055354");</script><!-- end Mixpanel -->
           <img class="logo" alt="Get Cooked" src="images/getcookprofile.png">
         </div>
         <h1 class="heading without-margin">Cater events around you.</h1>
-        <h2 class="info-text padding-small">Plan, organise and share food at events around London.</h2>
+        <h2 class="info-text padding-small">Are you a caterer? Plan, organise, and share your food at events around London.</h2>
         <div class="information">
           <div>
             <br>
@@ -161,8 +171,9 @@ mixpanel.init("65f6d76c5922979972106f6f44055354");</script><!-- end Mixpanel -->
             <a target="_blank" href="https://twitter.com/getcookedapp">
               <img class="footer-icons" alt="twitter" src="images/twitter.svg">
             </a>
-
-            <img class="footer-icons" alt="instagram" src="images/instagram.svg">
+            <a href="https://www.instagram.com/getcookedapp/">
+              <img class="footer-icons" alt="instagram" src="images/instagram.svg">
+            </a>
           </div>
           <div class="row">
             <a class="footer-text" href="mailto:team@getcooked.co"><img class="email-icon" alt="instagram" src="images/email.svg">team@getcooked.co</a>
@@ -177,10 +188,6 @@ mixpanel.init("65f6d76c5922979972106f6f44055354");</script><!-- end Mixpanel -->
     </div>
   </section>
 </container>
-
-<script type="text/javascript">
-  mixpanel.track_links("#sign-up", "Click Sign Up", {});
-</script>
 </body>
 
 <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" >

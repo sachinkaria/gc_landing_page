@@ -1,6 +1,15 @@
 <html>
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108194117-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-108194117-1');
+    </script>
     <title>Get Cooked</title>
 
     <link rel="icon" href="images/getcookprofile.png" type="image/png">
@@ -11,7 +20,7 @@
     <meta property="description" content="Book the best caterers in London. Plan and cater events organised by you, anytime, anywhere.">
 
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Get Cooked">
+    <meta property="og:title" content="Cater your events with the coolest chefs around.">
     <meta property="og:description" content="Book the best caterers in London. Plan and cater events organised by you, anytime, anywhere.">
     <meta property="og:image" alt="get cooked helps you find and book caterers" content="http://getcooked.co/images/facebook-image.jpg">
     <meta property="og:url" content="http://getcooked.co">
@@ -50,7 +59,7 @@ mixpanel.init("65f6d76c5922979972106f6f44055354");</script><!-- end Mixpanel -->
                 <div class="information">
                     <div>
                         <br>
-                        <form role="form" id="contactForm" class="">
+                        <form role="form" id="contactForm">
                             <div class="form-group row">
                                 <div class="col-md-6 col-md-offset-3">
                                     <input class="form-control input-field" type="email" id="email" name="email"
@@ -145,8 +154,9 @@ mixpanel.init("65f6d76c5922979972106f6f44055354");</script><!-- end Mixpanel -->
                         <a target="_blank" href="https://twitter.com/getcookedapp">
                             <img class="footer-icons" alt="twitter" src="images/twitter.svg">
                         </a>
-
-                        <img class="footer-icons" alt="instagram" src="images/instagram.svg">
+                        <a href="https://www.instagram.com/getcookedapp/">
+                            <img class="footer-icons" alt="instagram" src="images/instagram.svg">
+                        </a>
                     </div>
                     <div class="row">
                         <a class="footer-text" href="mailto:team@getcooked.co"><img class="email-icon" alt="instagram" src="images/email.svg">team@getcooked.co</a>
@@ -161,10 +171,6 @@ mixpanel.init("65f6d76c5922979972106f6f44055354");</script><!-- end Mixpanel -->
         </div>
     </section>
 </container>
-
-<script type="text/javascript">
-  mixpanel.track_links("#sign-up", "Click Sign Up", {});
-</script>
 </body>
 
 <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
@@ -177,5 +183,5 @@ mixpanel.init("65f6d76c5922979972106f6f44055354");</script><!-- end Mixpanel -->
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="custom.js"></script>
-
+=
 </html>
