@@ -35,6 +35,8 @@ function submitForm(){
 
 function formSuccess(){
   $("#contactForm")[0].reset();
+  $("#sign-up").addClass('hidden');
+  $("#email").addClass('hidden');
   submitMSG(true, "Awesome! We'll be in touch.")
 }
 
@@ -79,6 +81,8 @@ function submitChefForm(){
 
 function chefFormSuccess(){
   $("#chefContactForm")[0].reset();
+  $("#sign-up").addClass('hidden');
+  $("#email").addClass('hidden');
   submitMSG(true, "Awesome! We'll be in touch.")
 }
 
